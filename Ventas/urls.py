@@ -4,5 +4,6 @@ from Ventas.views import miportal, producto
 
 urlpatterns = [
 
-    path('miportal/', miportal)    
+    path('producto/', producto),
+    path('miportal/', miportal),    
 ]
