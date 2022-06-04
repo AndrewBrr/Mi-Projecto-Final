@@ -22,10 +22,10 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="/Ventas/portal/">Portal</a>
-                <a class="btn btn-primary" href="/Ventas/sardo/">sardo</a>
-                <a class="btn btn-primary" href="/Ventas/reggiano">reggiano</a>
-                <a class="btn btn-primary" href="Ventas/provolone">provolone</a>
+                <a class="navbar-brand" href="{% url 'Portal' %}">Portal</a>
+                <a class="btn btn-primary" href="{% url 'Sardo' %}">Sardo</a>
+                <a class="btn btn-primary" href="{% url 'Reggiano' %}">Reggiano</a>
+                <a class="btn btn-primary" href="{% url 'Provolone' %}">Provolone</a>
             </div>
         </nav>
         <!-- Masthead-->

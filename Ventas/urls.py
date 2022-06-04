@@ -4,9 +4,9 @@ from Ventas.views import miportal, sardo, reggiano, provolone
 
 urlpatterns = [
 
-    path('portal/', miportal),   
-    path('sardo/',sardo,), 
-    path('reggiano/', reggiano,),
-    path('provolone/', provolone)
+    path('portal/', miportal, name='Portal'),   
+    path('sardo/',sardo, name='Sardo'), 
+    path('reggiano/', reggiano, name='Reggiano'),
+    path('provolone/', provolone, name='Provolone')
 
 ]
