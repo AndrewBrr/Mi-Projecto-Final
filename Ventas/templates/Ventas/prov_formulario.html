@@ -1,0 +1,21 @@
+{% extends 'Ventas/raiz.html' %}
+{% load static %}
+{% block nombre_seccion %}
+
+<h3 style="color:darkgoldenrod"> Seccion de Provolone</h3>
+{% endblock %}
+
+{% block contenidoquecambia %}
+<h3> Formulario de Registro de Producto en Stock</h3>
+
+
+<form action="{% url 'prov_formulario' %}" method="POST"> {% csrf_token %}
+<h>INGRESE LOS DATOS DEL PRODUCTO</h>
+
+    {{form_P.as_table}}
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}

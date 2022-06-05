@@ -1,0 +1,26 @@
+{% extends 'Ventas/raiz.html' %}
+{% load static %}
+{% block nombre_seccion %}
+
+<h3 style="color:brown"> Seccion de Sardo</h3>
+{% endblock %}
+
+{% block contenidoquecambia %}
+<h3> Formulario de Registro de Producto en Stock</h3>
+
+
+<form action="{% url 'sardo_formulario' %}" method="POST"> {% csrf_token %}
+<h>INGRESE LOS DATOS DEL PRODUCTO</h>
+
+   <table> 
+
+        {{form_s.as_table}}
+
+   </table>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}
+
