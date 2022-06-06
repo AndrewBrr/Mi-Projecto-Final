@@ -12,8 +12,11 @@
 <form action="{% url 'prov_formulario' %}" method="POST"> {% csrf_token %}
 <h>INGRESE LOS DATOS DEL PRODUCTO</h>
 
-    {{form_P.as_table}}
+    <table>
+        {{form_prov.as_table}}
 
+    </table>
+    
     <input type="submit" value="Enviar">
 
 </form>
